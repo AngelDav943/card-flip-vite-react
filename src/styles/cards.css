@@ -1,0 +1,76 @@
+#root {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+    border-radius: 1em;
+    margin: 1em;
+    width: 15em;
+    height: 25em;
+    background-color: #0a0a23;
+    color: white;
+}
+
+.card .image {
+    height: 12em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: black;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    transition: background-color 0.8s;
+}
+
+.image img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+
+    opacity: 0.5;
+    width: 10em;
+    height: 10em;
+
+    transition: all 0.8s;
+}
+
+.card:hover > .image {
+    background-color: gray;
+}
+
+.card:hover > .image img {
+    opacity: 1;
+    width: 15em;
+    height: 15em;
+}
+
+.card .top {
+    height: 4em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card .top * {
+    display: inline;
+}
+
+.data {
+    height: 9em;
+    text-align: left;
+}
+
+.data p {
+    width: 10em;
+    margin: 0.5em 0px;
+    padding: 0px 2.5em;
+}
