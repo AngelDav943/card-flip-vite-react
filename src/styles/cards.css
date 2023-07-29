@@ -23,7 +23,6 @@
     height: 100%;
     backface-visibility: hidden;
     border-radius: 10px;
-    overflow: hidden;
     transition: .5s;
 }
 
@@ -33,11 +32,18 @@
 }
 
 .card .back {
-    transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(-180deg);
     width: 100%;
     height: 100%;
     background-color: black;
     border-radius: 1em;
+}
+
+.card .back img {
+    box-shadow: inset 0px 0px 15em -10px white;
+    background-color: black;
+    width: 5em;
+    height: 5em;
 }
 
 .card .image {
@@ -58,9 +64,9 @@
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
 
-    opacity: 0.1;
-    width: 6em;
-    height: 6em;
+    opacity: 0.3;
+    width: 10em;
+    height: 10em;
 
     transition: all 0.8s;
 }
@@ -71,8 +77,8 @@
 
 .front:hover > .image img {
     opacity: 1;
-    width: 12em;
-    height: 12em;
+    width: 15em;
+    height: 15em;
 }
 
 .card .top {

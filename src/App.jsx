@@ -18,9 +18,6 @@ export default function() {
       <Card src ={antoni} name="Anthony" strength="999" speed="100" description="Primo de juan"/>
       <Card src ="juan_transparent.png" name="Juan" strength="100" speed="999" description="Primo de antonio."/>
       <Card src ="rodolfo.png" name="Rodolfo" strength="10" speed="70" description={shortlorem}/>
-      <Card src={antoni} name="Anthony" strength="999" speed="999" description={shortlorem}/>
-      <Card src={antoni} name="Anthony" strength="999" speed="999" description={shortlorem}/>
-      <Card src={antoni} name="Anthony" strength="999" speed="999" description={shortlorem}/>
     </>
   )
 }
