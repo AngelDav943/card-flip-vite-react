@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import './styles/testimonios.css'
+import './styles/testimonies.css'
 import './styles/cards.css'
 
 import Saludo from './Components/greetings'
@@ -11,26 +11,12 @@ const longlorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea f
 const shortlorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 const antoni = "antonio_transparent.png"
 
-//<Testimony src="src/assets/antonio.png" job="Ingeniero de Software" name="Antonio" content={lorem}/>
-export default function() {
+export default function () {
   return (
     <>
-      <Card src ={antoni} name="Anthony" strength="999" speed="100" description="Primo de juan"/>
-      <Card src ="juan_transparent.png" name="Juan" strength="100" speed="999" description="Primo de antonio."/>
-      <Card src ="rodolfo.png" name="Rodolfo" strength="10" speed="70" description={shortlorem}/>
+      <Card src={antoni} name="Anthony" strength="999" speed="100" description="juan's cousin" />
+      <Card src="juan_transparent.png" name="Juan" strength="100" speed="999" description="anthony's cousin." />
+      <Card src="rodolfo.png" name="Rudolph" strength="10" speed="70" description={shortlorem} />
     </>
   )
 }
-
-/*export default function() {
-  const [count, setCount] = useState(0)
-  return (
-    <>
-      <Saludo>Angel</Saludo>
-      <button onClick={() => setCount(c => c += 1)}>
-        <img src="src/assets/antonio.png" alt="" />
-        <p>{count}</p>
-      </button>
-    </>
-  )
-}*/

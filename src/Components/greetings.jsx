@@ -1,6 +1,6 @@
 function Greeting(arg) {
     return <div>
-        <p>hola {arg.children}</p>
+        <p>Hi {arg.children}</p>
     </div>
 }
 
